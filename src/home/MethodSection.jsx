@@ -32,58 +32,58 @@ export default function MethodSection() {
 
   return (
     <section className="relative bg-[#fbf9ff]">
-      <div className="mx-auto  px-6 lg:px-12 grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-16">
+      <div className="mx-auto px-4 sm:px-6 lg:px-12 grid lg:grid-cols-[0.85fr_1.15fr] gap-8 sm:gap-10 lg:gap-16">
 
         {/* LEFT STICKY */}
         <div className="relative">
-          <div className="lg:sticky lg:top-0 lg:min-h-screen flex flex-col justify-center py-16 lg:py-20">
-            
+          <div className="lg:sticky lg:top-0 lg:min-h-screen flex flex-col justify-center py-10 sm:py-14 lg:py-20">
+
             <div className="inline-flex w-fit items-center rounded-full border border-[#ded4ea] bg-white/60 px-4 py-2 text-[9px] tracking-[4px] uppercase text-[#5d46a6] font-medium">
               <span className="mr-2 text-[12px] leading-none">•</span>
               The Method
             </div>
 
-            <h2 className="mt-6 font-serif text-[#17111f] text-[34px] sm:text-[42px] lg:text-[46px] leading-[1.02] tracking-[-1px] font-normal">
+            <h2 className="mt-5 sm:mt-6 font-serif text-[#17111f] text-[30px] sm:text-[42px] lg:text-[46px] leading-[1.06] lg:leading-[1.02] tracking-[-1px] font-normal">
               The Manovaidya{" "}
               <span className="text-[#8a3fae]">Root-</span>
               <br />
               <span className="text-[#8a3fae]">Cause Approach</span>
             </h2>
 
-            <p className="mt-5 max-w-[430px] font-serif italic text-[#6f6878] text-[15px] leading-[1.55]">
+            <p className="mt-4 sm:mt-5 max-w-[430px] font-serif italic text-[#6f6878] text-[14px] sm:text-[15px] leading-[1.55]">
               We focus on understanding the deeper internal pattern — instead of
               only suppressing symptoms temporarily.
             </p>
 
-            <div className="mt-8 w-full max-w-[460px] overflow-hidden rounded-[24px] shadow-[0_18px_45px_rgba(92,70,173,0.08)]">
+            <div className="mt-6 sm:mt-8 w-full max-w-[460px] overflow-hidden rounded-[20px] sm:rounded-[24px] shadow-[0_18px_45px_rgba(92,70,173,0.08)]">
               <img
                 src={methodImg}
                 alt="Manovaidya root cause approach"
-                className="h-[260px] sm:h-[320px] w-full object-cover"
+                className="h-[220px] sm:h-[320px] w-full object-cover"
               />
             </div>
           </div>
         </div>
 
         {/* RIGHT SCROLL CONTENT */}
-        <div className="py-16 lg:py-20">
-          <div className="space-y-4">
+        <div className="pb-10 sm:pb-14 lg:py-20">
+          <div className="space-y-3 sm:space-y-4">
             {methods.map((item) => (
               <div
                 key={item.no}
-                className="rounded-[22px] border border-[#e1d8ec] bg-white px-10 py-7 lg:px-7 lg:py-7 shadow-[0_10px_30px_rgba(92,70,173,0.04)]"
+                className="rounded-[18px] sm:rounded-[22px] border border-[#e1d8ec] bg-white px-4 py-5 sm:px-7 sm:py-7 lg:px-7 lg:py-7 shadow-[0_10px_30px_rgba(92,70,173,0.04)]"
               >
-                <div className="flex items-start gap-6">
-                  <span className="font-serif text-[#b9a0db] text-[22px] leading-none min-w-[36px] pt-1">
+                <div className="flex items-start gap-4 sm:gap-6">
+                  <span className="font-serif text-[#b9a0db] text-[18px] sm:text-[22px] leading-none min-w-[30px] sm:min-w-[36px] pt-1">
                     {item.no}
                   </span>
 
                   <div>
-                    <h3 className="font-serif font-normal text-[#17111f] text-[24px] leading-tight">
+                    <h3 className="font-serif font-normal text-[#17111f] text-[19px] sm:text-[24px] leading-tight">
                       {item.title}
                     </h3>
 
-                    <p className="mt-2 text-[#56536a] text-[16px] leading-relaxed">
+                    <p className="mt-2 text-[#56536a] text-[14px] sm:text-[16px] leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -96,4 +96,4 @@ export default function MethodSection() {
       </div>
     </section>
   );
-}  
+}
